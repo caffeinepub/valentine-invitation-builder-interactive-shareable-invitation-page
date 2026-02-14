@@ -1,0 +1,42 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Rename and brand the app as “yourlove”",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "summary": "Replace user-facing app-name branding text in the UI with “yourlove” while keeping invitation functionality unchanged.",
+      "acceptanceCriteria": [
+        "The main builder page heading currently shown as “Valentine Invitation Builder” is updated to “yourlove”.",
+        "The footer copyright/app name text is updated to “yourlove”.",
+        "No Valentine invitation creation, publish/share, or invitation viewing behavior is removed or broken."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/BuilderPage.tsx",
+          "operation": "modify",
+          "description": "Update the main builder page heading text from “Valentine Invitation Builder” to “yourlove”, keeping existing builder, publish/share, and preview logic unchanged."
+        },
+        {
+          "path": "frontend/src/components/AppLayout.tsx",
+          "operation": "modify",
+          "description": "Update the footer app-name/copyright text from “Valentine Invitation Builder” to “yourlove”, keeping the existing footer structure and links unchanged."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Set the HTML document (browser tab) title to “yourlove”.",
+      "acceptanceCriteria": [
+        "The page <title> shown in the browser tab is “yourlove”."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Change the HTML <title> to exactly “yourlove” so the browser tab title reflects the new app name."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T05:23:05.663Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-7",
+        "summary": "Update the app’s user-facing branding text to use the website/app name “yourlove”, replacing existing “Valentine Invitation Builder”/similar app-name strings in the UI while keeping the existing Valentine invitation functionality unchanged.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/BuilderPage.tsx",
+          "frontend/src/components/AppLayout.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/BuilderPage.tsx",
+          "frontend/src/components/AppLayout.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Update the HTML document title (browser tab title) to “yourlove”.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html"
+        ],
+        "matchedFiles": [
+          "frontend/index.html"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.html",
+    "frontend/src/components/AppLayout.tsx",
+    "frontend/src/pages/BuilderPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

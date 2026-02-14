@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Website to create a cute interactive Valentine-style webpage invitation.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-valentine-invitation-builder-flow-that-lets-a-user-enter-invitation-details-and-see-a-live-preview-before-publishing",
+      "title": "Create a Valentine invitation builder flow that lets a user enter invitation details and see a live preview before publishing.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-publish-share-mechanism-that-generates-a-unique-invitation-url-and-a-public-invitation-view-page-that-renders-the-invitation-by-id",
+      "title": "Implement a publish/share mechanism that generates a unique invitation URL and a public invitation view page that renders the invitation by ID.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-cute-interactive-valentine-style-behaviors-to-the-public-invitation-view-animations-and-small-interactions-while-keeping-the-content-readable-and-accessible",
+      "title": "Add cute interactive Valentine-style behaviors to the public invitation view (animations and small interactions), while keeping the content readable and accessible.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-consistent-coherent-visual-theme-suitable-for-a-valentine-invitation-experience-warm-romantic-cute-across-builder-preview-and-invitation-view-pages",
+      "title": "Apply a consistent, coherent visual theme suitable for a Valentine invitation experience (warm, romantic, cute) across builder, preview, and invitation view pages.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-image-assets-for-the-valentine-theme-and-render-them-in-the-ui-do-not-serve-images-through-the-backend",
+      "title": "Add generated static image assets for the Valentine theme and render them in the UI (do not serve images through the backend).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-app-s-user-facing-branding-text-to-use-the-website-app-name-yourlove-replacing-existing-valentine-invitation-builder-similar-app-name-strings-in-the-ui-while-keeping-the-existing-valentine-invitation-functionality-unchanged",
+      "title": "Update the app’s user-facing branding text to use the website/app name “yourlove”, replacing existing “Valentine Invitation Builder”/similar app-name strings in the UI while keeping the existing Valentine invitation functionality unchanged.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-html-document-title-browser-tab-title-to-yourlove",
+      "title": "Update the HTML document title (browser tab title) to “yourlove”.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build a website that lets the user create a cute, interactive Valentine-style webpage invitation.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Backend: add Motoko data model and APIs to create and fetch invitations by ID in the single main actor.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "yourlove",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

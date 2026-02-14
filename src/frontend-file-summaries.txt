@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with routes for the builder page (/) and invitation view page (/invite/:id), wrapped in AppLayout.",
+  "frontend/src/components/AppLayout.tsx": "Shared layout component that renders background patterns, paper texture overlay, page content via Outlet, and footer with \"yourlove\" branding and caffeine.ai attribution.",
+  "frontend/src/pages/BuilderPage.tsx": "Builder page with tabbed interface for creating invitations, with main heading updated to \"yourlove\" while keeping all invitation functionality unchanged.",
+  "frontend/src/pages/InvitationViewPage.tsx": "Public invitation view page that loads an invitation by ID from URL params, displays it with ValentineInteractions, and handles loading/error states.",
+  "frontend/src/components/InvitationPreviewCard.tsx": "Reusable card component that renders invitation content in a romantic love letter style with decorative elements, used in both builder preview and public view.",
+  "frontend/src/components/ValentineInteractions.tsx": "Interactive Valentine component with \"Will you be my Valentine?\" prompt, Yes/No buttons with playful animations (floating hearts, moving No button), and reduced-motion support.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend operations including useGetInvitation and useCreateInvitation with proper error handling and cache invalidation.",
+  "frontend/src/hooks/usePrefersReducedMotion.ts": "Custom hook that detects user's prefers-reduced-motion setting and returns boolean for conditional animation rendering.",
+  "frontend/src/state/invitationDraft.ts": "Draft state management with localStorage persistence for invitation builder, including load/save/clear operations and TypeScript interface.",
+  "frontend/src/index.css": "Global styles with warm Valentine color palette in OKLCH, custom Google Fonts (Playfair Display, Crimson Text), accessibility focus styles, and custom animations with reduced-motion support.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Valentine theme colors, custom fonts, box shadows, and animation keyframes for floating hearts effect.",
+  "frontend/src/components/ui/alert.tsx": "Alert component from shadcn/ui for displaying error and informational messages with variants.",
+  "frontend/src/lib/utils.ts": "Utility function for merging Tailwind classes using clsx and tailwind-merge.",
+  "frontend/index.html": "HTML entry point with page title set to \"yourlove\" for browser tab display."
+}

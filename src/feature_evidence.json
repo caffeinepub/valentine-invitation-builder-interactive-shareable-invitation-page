@@ -1,0 +1,42 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-app-s-user-facing-branding-text-to-use-the-website-app-name-yourlove-replacing-existing-valentine-invitation-builder-similar-app-name-strings-in-the-ui-while-keeping-the-existing-valentine-invitation-functionality-unchanged",
+      "featureTitle": "Update the app’s user-facing branding text to use the website/app name “yourlove”, replacing existing “Valentine Invitation Builder”/similar app-name strings in the UI while keeping the existing Valentine invitation functionality unchanged.",
+      "files": [
+        "frontend/src/components/AppLayout.tsx",
+        "frontend/src/pages/BuilderPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-html-document-title-browser-tab-title-to-yourlove",
+      "featureTitle": "Update the HTML document title (browser tab title) to “yourlove”.",
+      "files": [
+        "frontend/index.html"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

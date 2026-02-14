@@ -1,0 +1,65 @@
+{
+  "kind": "build_request",
+  "title": "Rename and brand the app as “yourlove”",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Update the app’s user-facing branding text to use the website/app name “yourlove”, replacing existing “Valentine Invitation Builder”/similar app-name strings in the UI while keeping the existing Valentine invitation functionality unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create app for my website named yourlove"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The main builder page heading currently shown as “Valentine Invitation Builder” is updated to “yourlove”.",
+        "The footer copyright/app name text is updated to “yourlove”.",
+        "No Valentine invitation creation, publish/share, or invitation viewing behavior is removed or broken."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Update the HTML document title (browser tab title) to “yourlove”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create app for my website named yourlove"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page <title> shown in the browser tab is “yourlove”."
+      ]
+    }
+  ],
+  "constraints": [
+    "Backend must remain a single Motoko actor (all logic in backend/main.mo); only add migration code if a state upgrade is required.",
+    "Do not edit frontend immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui (compose instead).",
+    "Use English for any user-facing text."
+  ],
+  "nonGoals": [
+    "Adding new invitation features or changing the existing Valentine invitation builder/share flow.",
+    "Changing authentication behavior or replacing Internet Identity.",
+    "Introducing new backend storage models beyond what is required for renaming/branding."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

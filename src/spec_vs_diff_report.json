@@ -1,0 +1,24 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T05:23:05.660Z",
+  "summary": "REQ-7 and REQ-8 appear implemented: builder page heading and footer branding updated to “yourlove”, and the HTML document <title> is set to “yourlove”. One extra footer attribution/link (caffeine.ai) is present that was not requested.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Added/updated footer attribution content linking to caffeine.ai (“Built with … using caffeine.ai”).",
+      "reason": "BuildRequest only asked to rename branding to “yourlove” (heading/footer text) and set the HTML title; it did not request adding third-party attribution or outbound links in the footer.",
+      "evidence": [
+        "frontend/src/components/AppLayout.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.73,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/index.html",
+    "frontend/src/components/AppLayout.tsx",
+    "frontend/src/pages/BuilderPage.tsx",
+    "project_state.json"
+  ]
+}

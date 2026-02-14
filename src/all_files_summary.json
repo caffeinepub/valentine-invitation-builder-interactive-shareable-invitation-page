@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Defines an actor managing Invitation records with create, get, and list operations using a Map.",
+  "feature_evidence.json": "Describes feature updates, affected frontend files, components, and test references for branding and title changes.",
+  "frontend-file-summaries.txt": "Provides short descriptions of multiple frontend files including components, pages, hooks, and styling.",
+  "frontend/index.css": "Defines global Tailwind CSS styles, theme variables, and light/dark mode color palettes.",
+  "frontend/index.html": "HTML entry point setting up the root element and page title 'yourlove'.",
+  "frontend/src/App.tsx": "Configures TanStack Router with routes for the builder and invitation view pages.",
+  "frontend/src/components/AppLayout.tsx": "Shared layout with background visuals, content outlet, and footer branding.",
+  "frontend/src/components/InvitationPreviewCard.tsx": "Renders a styled invitation preview card with decorative visuals and optional details.",
+  "frontend/src/components/ValentineInteractions.tsx": "Interactive Valentine prompt with floating hearts animation, yes/no logic, and reduced-motion handling.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages a backend actor tied to Internet Identity, invalidating queries on identity change.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides a React context and provider for managing Internet Identity authentication using AuthClient, exposing identity, login state, and login/clear methods.",
+  "frontend/src/hooks/usePrefersReducedMotion.ts": "A hook that returns whether the user prefers reduced motion using a media query listener.",
+  "frontend/src/hooks/useQueries.ts": "Defines React Query hooks for fetching an invitation and creating new invitations via the backend actor.",
+  "frontend/src/index.css": "Global Tailwind CSS setup with custom color variables, fonts, animations, and reduced‑motion support.",
+  "frontend/src/lib/utils.ts": "Utility function for merging Tailwind class names using clsx and tailwind-merge.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query and InternetIdentityProvider and renders the App component.",
+  "frontend/src/pages/BuilderPage.tsx": "Invitation builder page allowing users to draft, publish, and share invitations with preview and copy‑link options.",
+  "frontend/src/pages/InvitationViewPage.tsx": "Displays a published invitation, handling loading and error states, and shows interactive Valentine elements.",
+  "frontend/src/state/invitationDraft.ts": "Manages invitation draft state with localStorage persistence, update helpers, and clear functionality.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors, typography, animations, and theme settings using custom OKLCH variables.",
+  "project_state.json": "Defines the project’s current state, listing implemented Valentine invitation features, pending feature requests, and metadata like schema and project name. Focuses on builder flow, sharing, theme assets, branding, and backend invitation APIs."
+}
